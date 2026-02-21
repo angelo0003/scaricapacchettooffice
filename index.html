@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Cartella OFFICE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 20px 50px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+        }
+        .download-btn:hover {
+            background: #45a049;
+            transform: scale(1.05);
+        }
+        .note {
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📂 OFFICE 2016 - 2013 OT</h1>
+        <p>Clicca il pulsante per scaricare l'intera cartella</p>
+        
+        <!-- QUESTO LINK SCARICA L'INTERA CARTELLA COME ZIP -->
+        <a href="https://drive.google.com/drive/folders/1g2lN2nBHXE0r71EFFvqqxmWXqLYBaK02?usp=sharing" 
+           class="download-btn" 
+           target="_blank">
+            ⬇️ SCARICA CARTELLA
+        </a>
+        
+        <p class="note">⚠️ Importante: Devi essere loggato con Google per scaricare</p>
+        <p class="note">💡 Dopo il click, clicca su "Scarica tutto" in alto a destra su Drive</p>
+    </div>
+
+    <script>
+        // ALTERNATIVA: Download automatico con JavaScript
+        document.querySelector('.download-btn').addEventListener('click', function(e) {
+            // Non blocchiamo il link, ma possiamo aggiungere un messaggio
+            console.log('Apertura cartella Drive...');
+        });
+    </script>
+</body>
+</html>
